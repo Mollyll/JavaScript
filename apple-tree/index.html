@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/position.js"></script>
+	<script type="text/javascript">
+		window.onload = function(){
+			var content1 = document.getElementById("content1");
+			var imgs = document.images;
+
+			var title = ["a","b","c","d","e","f","g","b","c","d","e","f","g","b","c","d","e","f","g","b","c","d","e","f","g","b","c","d","e","f","g"]
+			imgs[0].title = title[0];
+			imgs[0].style.position = "absolute";
+			imgs[0].style.top = position[0].top;
+			imgs[0].style.left = position[0].left;
+			
+			
+			for(var i = 1; i <= 29; i++){
+				var imgNew = document.createElement("img");
+				imgNew.src = "./images/icon-09.png";
+				content1.appendChild(imgNew);
+				imgNew.title = title[i];
+				if (i<=5) {
+					imgNew.style.position = "absolute";
+					imgNew.style.top = parseInt(position[0].top)-(i*25) + "px";
+					imgNew.style.left = parseInt(position[0].left)+(i*93) + "px";
+				}else if(i>=6&&i<12){
+					imgNew.style.position = "absolute";
+					imgNew.style.top = parseInt(position[1].top)-((i-5)*25) + "px";
+					imgNew.style.left = parseInt(position[1].left)+((i-5)*93) + "px";
+				}else if (i>=12&&i<18) {
+					imgNew.style.position = "absolute";
+					imgNew.style.top = parseInt(position[2].top)-((i-11)*25) + "px";
+					imgNew.style.left = parseInt(position[2].left)+((i-11)*93) + "px";
+				}else if(i>=18&&i<24){
+					imgNew.style.position = "absolute";
+					imgNew.style.top = parseInt(position[3].top)-((i-17)*27) + "px";
+					imgNew.style.left = parseInt(position[3].left)+((i-17)*85) + "px";
+				}else if (i>=24&&i<40) {
+					imgNew.style.position = "absolute";
+					imgNew.style.top = parseInt(position[4].top)-((i-23)*27) + "px";
+					imgNew.style.left = parseInt(position[4].left)+((i-23)*85) + "px";
+				}
+
+				
+
+			}
+			
+			
+			
+			
+
+		}
+	</script>
+
+</head>
+<body>
+	<div id="container1" class="container_1">
+		<h1>学生个性成长网络平台卡通模式</h1>
+		<div class="content_1" id="content1">
+			<img src="./images/icon-09.png">
+		</div>
+	</div>
+</body>
+</html>

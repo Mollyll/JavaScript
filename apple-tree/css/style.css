@@ -1,0 +1,6 @@
+body,div,ul,li{margin: 0; padding: 0;}
+img{ display: inline-block; }
+
+.container_1{ width: 1600px; height: auto; }
+h1{ font-size: 24px; height: 50px; line-height: 50px; text-align: center;}
+.content_1{ height:475px; width: 1400px;  background: url(../images/tudi.png) no-repeat center; }
